@@ -1,0 +1,366 @@
+.home {
+  min-height: calc(100vh - 200px);
+}
+
+.hero {
+  background: linear-gradient(rgba(7, 71, 166, 0.9), rgba(7, 71, 166, 0.9)),
+              url('/hero-bg.jpg') center/cover;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  color: #F4F5F7;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #0052CC;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0747A6;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+.cic-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  min-height: 64px;
+}
+.cic-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.cic-logo {
+  height: 40px;
+  width: auto;
+}
+.cic-logo-text {
+  font-weight: 700;
+  color: #B71C1C;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.cic-header-center {
+  flex: 1;
+  text-align: center;
+}
+.cic-faq-link {
+  color: #6B778C;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.cic-header-right {
+  color: #B71C1C;
+  font-weight: 500;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.cic-header-right i {
+  margin-right: 0.3rem;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.cic-home-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1rem 0 1rem;
+  background: #fff;
+  animation: slideInFromRight 0.8s ease-out forwards;
+}
+.cic-welcome {
+  color: #222;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  animation: slideInFromRight 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+.cic-main-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  letter-spacing: -1px;
+  animation: slideInFromRight 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+.cic-subtitle {
+  color: #6B778C;
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  animation: slideInFromRight 0.8s ease-out 0.6s forwards;
+  opacity: 0;
+}
+.cic-steps {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  max-width: 1100px;
+  animation: slideInFromRight 0.8s ease-out 0.8s forwards;
+  opacity: 0;
+}
+.cic-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+  min-width: 220px;
+  max-width: 300px;
+}
+.cic-step-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1.2rem;
+}
+.cic-step-num {
+  background: #B71C1C;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.7rem;
+}
+.cic-step-title {
+  color: #B71C1C;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+.cic-step-desc {
+  color: #6B778C;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.cic-start-btn {
+  background: #B71C1C;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.9rem 2.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 1.5rem;
+  transition: background 0.2s;
+  animation: slideInFromRight 0.8s ease-out 1s forwards;
+  opacity: 0;
+}
+.cic-start-btn:hover {
+  background: #8B1515;
+}
+
+.cic-yellow-footer {
+  background: #FFC400;
+  color: #222;
+  padding: 1.2rem 0 0.7rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 3rem;
+}
+.cic-yellow-footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.cic-yellow-footer-contact {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 900px) {
+  .cic-steps {
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .cic-steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .cic-step {
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .cic-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0.5rem;
+  }
+  .cic-main-heading {
+    font-size: 2rem;
+  }
+  .cic-home-main {
+    padding: 1rem 0.2rem 0 0.2rem;
+  }
+  .cic-yellow-footer {
+    font-size: 1rem;
+  }
+}
+
+.cic-header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  border-bottom: 1px solid #eee;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+.cic-header-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cic-header-center {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cic-header-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.cic-logo-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+.cic-login-link {
+  color: #B71C1C;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.cic-login-link:hover {
+  color: #8B1515;
+}
+.cic-faq-link {
+  color: #6B778C;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.cic-faq-link:hover {
+  color: #B71C1C;
+}
+.cic-home-main {
+  margin-top: 64px;
+}
+@media (max-width: 700px) {
+  .cic-header-fixed {
+    flex-direction: column;
+    height: auto;
+    padding: 0.5rem 0.5rem;
+    gap: 0.5rem;
+  }
+  .cic-home-main {
+    margin-top: 80px;
+  }
+}
+
+.cic-header-divider {
+  color: #B71C1C;
+  margin: 0 0.5rem;
+  font-weight: 300;
+}
+
+.cic-register-link {
+  color: #B71C1C;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.cic-register-link:hover {
+  color: #8B1515;
+  text-decoration: underline;
+} 
